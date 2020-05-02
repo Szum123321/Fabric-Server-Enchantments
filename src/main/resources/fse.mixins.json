@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "io.github.qspdmc.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "EnchantmentHelperMixin",
+    "EnchantmentMixin",
+    "ItemStackMixin",
+    "RegistryAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

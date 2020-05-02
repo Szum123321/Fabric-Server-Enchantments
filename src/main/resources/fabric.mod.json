@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "fse",
+  "version": "${version}",
+  "name": "Fabric-Server-Enchantments",
+  "description": "serverside enchantments for fabric",
+  "authors": [
+    "HalfOf2"
+  ],
+  "contact": {
+    "sources": "https://github.com/Devan-Kerman/Classic-Combat-Fabric"
+  },
+  "license": "LGPLv3",
+  "icon": "assets/classicombat/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.qspdmc.ServerEnchants"
+    ]
+  },
+  "mixins": [
+    "fse.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.2+build.194",
+    "fabric": "*",
+    "minecraft": ">=1.14"
+  }
+}
