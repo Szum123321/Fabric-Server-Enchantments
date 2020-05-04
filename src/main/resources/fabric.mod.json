@@ -13,11 +13,6 @@
   "license": "LGPLv3",
   "icon": "assets/classicombat/icon.png",
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "io.github.qspdmc.ServerEnchants"
-    ]
-  },
   "mixins": [
     "fse.mixins.json"
   ],
