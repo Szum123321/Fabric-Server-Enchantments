@@ -6,7 +6,7 @@
     "EnchantmentHelperMixin",
     "EnchantmentMixin",
     "ItemStackMixin",
-    "RegistryAccess"
+    "RegistrySyncManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
