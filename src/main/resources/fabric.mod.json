@@ -13,6 +13,11 @@
   "license": "LGPLv3",
   "icon": "assets/classicombat/icon.png",
   "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.qspdmc.test.Main"
+    ]
+  },
   "mixins": [
     "fse.mixins.json"
   ],
