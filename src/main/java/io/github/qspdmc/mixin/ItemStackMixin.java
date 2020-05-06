@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class ItemStackMixin {
 	@Inject(method = "addEnchantment", at = @At("RETURN"))
 	private void addLore(Enchantment enchantment, int level, CallbackInfo ci) {
-		if(enchantment instanceof ServerEnchantment)
+		if (enchantment instanceof ServerEnchantment)
 			LoreUtil.addLore((ItemStack) (Object) (this), enchantment, level);
 	}
 }

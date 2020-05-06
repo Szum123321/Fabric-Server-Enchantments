@@ -9,12 +9,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-@Mixin (value = RegistrySyncManager.class,
-        remap = false)
+@Mixin(value = RegistrySyncManager.class, remap = false)
 public class RegistrySyncManagerMixin {
-	@Redirect (method = "toTag",
-	           at = @At (value = "INVOKE",
-	                     target = "Lnet/minecraft/util/registry/MutableRegistry;getId(Ljava/lang/Object;)Lnet/minecraft/util/Identifier;"))
+	@Redirect(method = "toTag", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/registry/MutableRegistry;getId(Ljava/lang/Object;)Lnet/minecraft/util/Identifier;"))
 	private static <T> Identifier getId(MutableRegistry<T> registry, T entry) {
 		if (registry == Registry.ENCHANTMENT && entry instanceof ServerEnchantment) {
 			return null;

@@ -7,11 +7,9 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
-@Mixin (Enchantment.class)
+@Mixin(Enchantment.class)
 public class EnchantmentMixin {
-	@ModifyVariable (method = "getName",
-	                 at = @At (value = "INVOKE",
-	                           target = "Lnet/minecraft/text/Text;formatted(Lnet/minecraft/util/Formatting;)Lnet/minecraft/text/Text;"))
+	@ModifyVariable(method = "getName", at = @At(value = "INVOKE", target = "Lnet/minecraft/text/Text;formatted(Lnet/minecraft/util/Formatting;)Lnet/minecraft/text/Text;"))
 	private Text translate(Text translatable) {
 		if (this instanceof ServerEnchantment) {
 			return ((ServerEnchantment) this).name();

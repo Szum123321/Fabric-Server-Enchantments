@@ -11,10 +11,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.Map;
 
-@Mixin (EnchantmentHelper.class)
+@Mixin(EnchantmentHelper.class)
 public class EnchantmentHelperMixin {
-	@Inject (method = "set",
-	         at = @At ("HEAD"))
+	@Inject(method = "set", at = @At("HEAD"))
 	private static void addLore(Map<Enchantment, Integer> enchantments, ItemStack stack, CallbackInfo ci) {
 		for (Enchantment enchantment : enchantments.keySet()) {
 			if (enchantment instanceof ServerEnchantment) {

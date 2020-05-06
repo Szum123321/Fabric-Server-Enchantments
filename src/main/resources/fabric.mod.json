@@ -13,17 +13,12 @@
   "license": "LGPLv3",
   "icon": "assets/classicombat/icon.png",
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "io.github.qspdmc.test.Main"
-    ]
-  },
   "mixins": [
     "fse.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.8.2+build.194",
     "fabric": "*",
-    "minecraft": ">=1.14"
+    "minecraft": ">=1.15"
   }
 }
