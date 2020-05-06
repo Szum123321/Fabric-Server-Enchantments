@@ -11,9 +11,7 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 public class EnchantmentMixin {
 	@ModifyVariable (method = "getName",
 	                 at = @At (value = "INVOKE",
-	                           target = "Lnet/minecraft/text/TranslatableText;<init>(Ljava/lang/String;[Ljava/lang/Object;)V",
-	                           shift = At.Shift.AFTER),
-	                 index = 2)
+	                           target = "Lnet/minecraft/text/Text;formatted(Lnet/minecraft/util/Formatting;)Lnet/minecraft/text/Text;"))
 	private Text translate(Text translatable) {
 		if (this instanceof ServerEnchantment) {
 			return ((ServerEnchantment) this).name();
