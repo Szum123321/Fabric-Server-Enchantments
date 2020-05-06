@@ -8,7 +8,7 @@ jobs:
     docker:
       - image: circleci/openjdk:8-jdk
 
-    working_directory: ~/Fabric-Server-Enchantments
+    working_directory: ~/repo
 
     environment:
       JVM_OPTS: -Xmx3200m
@@ -23,7 +23,7 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: gradlew dependencies
+      - run: ./gradlew dependencies
 
       - save_cache:
           paths:
@@ -31,7 +31,7 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run: gradlew check
+      - run: ./gradlew check
   deploy:
     docker:
       - image: circleci/openjdk:8-jdk
@@ -51,7 +51,7 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: gradlew dependencies
+      - run: ./gradlew dependencies
 
       - save_cache:
           paths:
@@ -59,7 +59,7 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # publish!
-      - run: gradlew publish
+      - run: ./gradlew publish
 
 workflows:
   version: 2
