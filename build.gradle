@@ -68,10 +68,15 @@ publishing {
         }
     }
 
-    // select the repositories you want to publish to
     repositories {
-        // uncomment to publish to the local maven
-        // mavenLocal()
+        maven {
+            url 'https://mymavenrepo.com/repo/253mgjM7YQzc2DQlYCZX/'
+            credentials {
+                username 'myMavenRepo'
+                password System.getenv("MAVEN_PASS")
+            }
+        }
+        //mavenLocal()
     }
 }
 
