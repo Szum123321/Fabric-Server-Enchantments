@@ -1,6 +1,6 @@
-package io.github.qspdmc.mixin;
+package io.github.qspdmc.fse.impl.mixin;
 
-import io.github.qspdmc.ServerEnchantment;
+import io.github.qspdmc.fse.api.ServerEnchantment;
 import net.fabricmc.fabric.impl.registry.sync.RegistrySyncManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.MutableRegistry;

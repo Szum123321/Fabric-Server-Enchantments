@@ -1,4 +1,4 @@
-package io.github.qspdmc;
+package io.github.qspdmc.fse.api;
 
 import net.minecraft.text.Text;
 

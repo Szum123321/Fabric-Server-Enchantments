@@ -1,4 +1,4 @@
-package io.github.qspdmc.util;
+package io.github.qspdmc.fse.impl.mixin.util;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;

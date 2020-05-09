@@ -1,6 +1,6 @@
-package io.github.qspdmc.mixin;
+package io.github.qspdmc.fse.impl.mixin;
 
-import io.github.qspdmc.ServerEnchantment;
+import io.github.qspdmc.fse.api.ServerEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.Mixin;

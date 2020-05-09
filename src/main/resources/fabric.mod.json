@@ -3,15 +3,14 @@
   "id": "fse",
   "version": "${version}",
   "name": "Fabric-Server-Enchantments",
-  "description": "serverside enchantments for fabric",
+  "description": "Server-side enchantments for Fabric",
   "authors": [
     "HalfOf2"
   ],
   "contact": {
-    "sources": "https://github.com/Devan-Kerman/Classic-Combat-Fabric"
+    "sources": "https://github.com/QsPD-Minecraft/Fabric-Server-Enchantments"
   },
   "license": "LGPLv3",
-  "icon": "assets/classicombat/icon.png",
   "environment": "*",
   "mixins": [
     "fse.mixins.json"
