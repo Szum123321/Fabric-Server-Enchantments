@@ -1,0 +1,3 @@
+accessWidener	v1	named
+
+accessible method net/minecraft/server/command/EnchantCommand execute (Lnet/minecraft/server/command/ServerCommandSource;Ljava/util/Collection;Lnet/minecraft/enchantment/Enchantment;I)I
