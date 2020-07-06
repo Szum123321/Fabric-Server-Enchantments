@@ -9,11 +9,11 @@ import net.minecraft.util.Formatting;
 
 public class TestEnchant extends SilkTouchEnchantment implements ServerEnchantment {
 	protected TestEnchant() {
-		super(Weight.COMMON, EquipmentSlot.OFFHAND);
+		super(Rarity.COMMON, EquipmentSlot.OFFHAND);
 	}
 
 	@Override
-	public int getMaximumLevel() {
+	public int getMaxLevel() {
 		return 10;
 	}
 
