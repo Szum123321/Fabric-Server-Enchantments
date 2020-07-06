@@ -35,6 +35,6 @@ public class LoreUtil {
 	}
 
 	private static String text(Enchantment enchantment, int level) {
-		return Text.Serializer.toJson(enchantment.getName(level).formatted(Formatting.GRAY, Formatting.RESET));
+		return Text.Serializer.toJson(enchantment.getName(level));
 	}
 }
